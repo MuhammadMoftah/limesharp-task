@@ -6,7 +6,7 @@
     <div class="body">
       <h5>BLOCK</h5>
       <p
-        :style="{ maxHeight: seeMore ? '' : '40px'}"
+        :style="{ maxHeight: seeMore ? '' : '43px'}"
       >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tortor leo, porttitor vel dictum at, aliquam et augue. Duis vel molestie risus, ut lobortis felis.</p>
       <button @click="seeMore = !seeMore">
         <PlusIcon v-if="!seeMore" style="width:20px;hight:20px;color:white" />
@@ -51,7 +51,7 @@ export default {
 }
 
 .item .body {
-  padding: 20px 50px;
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,6 +72,7 @@ export default {
   text-align: center;
   max-height: 110px;
   transition: max-height 0.15s linear;
+  max-width: 200px;
 }
 .item .body button {
   background: #1c2026;
